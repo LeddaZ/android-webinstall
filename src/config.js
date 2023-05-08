@@ -27,10 +27,6 @@ export default {
             model: "lemonadep",
         },
         {
-            name: "Redmi Note 9S/9 Pro/10 Lite",
-            model: "curtana",
-        },
-        {
             name: "Xiaomi Mi 11X/POCO F3/Redmi K40",
             model: "alioth",
         },
