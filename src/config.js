@@ -3,8 +3,36 @@ export default {
     ACCENT_COLOR: "#ebb35c",
     SUPPORTED_DEVICES: [
         {
+            name: "ASUS ZenFone 8",
+            model: "sake",
+        },
+        {
+            name: "Google Pixel 6",
+            model: "oriole",
+        },
+        {
+            name: "Google Pixel 6 Pro",
+            model: "raven",
+        },
+        {
+            name: "Google Pixel 7",
+            model: "panther",
+        },
+        {
+            name: "Google Pixel 7 Pro",
+            model: "cheetah",
+        },
+        {
+            name: "OnePlus 9 Pro",
+            model: "lemonadep",
+        },
+        {
             name: "Redmi Note 9S/9 Pro/10 Lite",
             model: "curtana",
+        },
+        {
+            name: "Xiaomi Mi 11X/POCO F3/Redmi K40",
+            model: "alioth",
         },
     ],
 };
