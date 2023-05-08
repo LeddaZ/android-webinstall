@@ -8,7 +8,7 @@
                     This is an easy way to install
                     {{ $root.$data.OS_NAME }} on your device. You’ll need an
                     <strong>unlocked</strong> model of one of the supported
-                    devices:
+                    devices (only devices which ship fastboot images are supported):
                 </p>
             </div>
 
