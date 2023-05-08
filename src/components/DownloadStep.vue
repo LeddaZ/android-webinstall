@@ -52,9 +52,6 @@
                 @click="download(release)"
             >
                 <v-card-title>{{ release.version }}</v-card-title>
-                <v-card-subtitle>{{
-                    $root.$data.RELEASE_VARIANTS[release.variant].description
-                }}</v-card-subtitle>
             </v-card>
         </div>
 
@@ -69,9 +66,8 @@
                 <div class="my-4">
                     <span class="text-body-1 green--text text--darken-3"
                         >Downloaded {{ $root.$data.OS_NAME }}
-                        {{ $root.$data.release.version }}-{{
-                            $root.$data.release.variant
-                        }}</span
+                        {{ $root.$data.release.version }}
+                    </span
                     >
                 </div>
             </v-banner>
@@ -175,7 +171,7 @@ export default {
 
             try {
                 this.saEvent(
-                    `download_build__${this.$root.$data.product}_${release.version}_${release.variant}`
+                    `download_build__${this.$root.$data.product}_${release.version}`
                 );
                 await this.blobStore.init();
                 let blob = await this.blobStore.download(

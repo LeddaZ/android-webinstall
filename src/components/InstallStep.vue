@@ -6,12 +6,7 @@
             <div class="text-body-1">
                 <p>
                     This will install {{ $root.$data.OS_NAME }}
-                    {{ $root.$data.release.version
-                    }}{{
-                        $root.$data.RELEASE_VARIANTS[
-                            $root.$data.release.variant
-                        ].suffix
-                    }}
+                    {{ $root.$data.release.version }}
                     on your
                     {{ getDeviceName($root.$data.product) }}.
                 </p>
@@ -179,7 +174,7 @@ export default {
                 }
 
                 this.saEvent(
-                    `install_build__${this.$root.$data.product}_${this.$root.$data.release.version}_${this.$root.$data.release.variant}`
+                    `install_build__${this.$root.$data.product}_${this.$root.$data.release.version}`
                 );
                 let blob = this.$root.$data.zipBlob;
                 await this.device.flashFactoryZip(
