@@ -147,7 +147,11 @@ export default {
                 this.saEvent("step_download");
 
                 if (this.releaseIndex === undefined) {
-                    let indexResp = await fetch("/releases/index.json");
+                    var path = "";
+                    if (process.env.NODE_ENV === "production") {
+                        path = process.env.VUE_APP_PROD_URL;
+                    }
+                    let indexResp = await fetch(path + "/releases/index.json");
                     this.releaseIndex = await indexResp.json();
                 }
 
