@@ -96,6 +96,14 @@ export default {
                 this.$root.$data.product = await this.device.getVariable(
                     "product"
                 );
+                var supportedDevices = this.$root.$data.SUPPORTED_DEVICES;
+                for(var i = 0; i < supportedDevices.length; i++) {
+                    for(var j = 0; j < supportedDevices[i].bootloaderNames.length; j++) {
+                        if(this.$root.$data.product == supportedDevices[i].bootloaderNames[j]) {
+                            this.$root.$data.$product = supportedDevices[i].model;
+                        }
+                    }
+                }
                 this.error = null;
 
                 if (this.firstConnect) {
