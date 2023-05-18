@@ -8,6 +8,16 @@ export default {
             bootloaderNames: ["lahaina", "ASUS_I006D"],
         },
         {
+            name: "Google Pixel 3",
+            model: "blueline",
+            bootloaderNames: ["blueline"],
+        },
+        {
+            name: "Google Pixel 3 XL",
+            model: "crosshatch",
+            bootloaderNames: ["crosshatch"],
+        },
+        {
             name: "Google Pixel 6",
             model: "oriole",
             bootloaderNames: ["oriole"],
