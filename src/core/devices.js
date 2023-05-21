@@ -3,6 +3,7 @@ const DEVICE_NAMES = {
     blueline: "Google Pixel 3",
     cheetah: "Google Pixel 7 Pro",
     crosshatch: "Google Pixel 3 XL",
+    lemonade: "OnePlus 9",
     lemonadep: "OnePlus 9 Pro",
     oriole: "Google Pixel 6",
     panther: "Google Pixel 7",

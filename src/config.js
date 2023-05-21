@@ -38,6 +38,11 @@ export default {
             bootloaderNames: ["cheetah"],
         },
         {
+            name: "OnePlus 9",
+            model: "lemonade",
+            bootloaderNames: ["lahaina", "OnePlus9"],
+        },
+        {
             name: "OnePlus 9 Pro",
             model: "lemonadep",
             bootloaderNames: ["lahaina", "OnePlus9Pro"],
